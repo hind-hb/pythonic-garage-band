@@ -1,7 +1,8 @@
 from abc import abstractclassmethod
 
-
+"""class will be inherited to kind of musician"""
 class Musician:
+ 
     members = []
 
     def __init__(self, name):
@@ -25,8 +26,9 @@ class Musician:
     def play_solo(self):
         pass
 
-
+""" sub class of musician that can play guitar """
 class Guitarist(Musician):
+
     def __str__(self):
 
         return "My name is {} and I play guitar".format(self.name)
@@ -41,6 +43,7 @@ class Guitarist(Musician):
     def play_solo(self):
         return "face melting guitar solo"
 
+""" sub class of musician that can play drummer """
 class Drummer(Musician):
     def __str__(self):
 
@@ -56,7 +59,7 @@ class Drummer(Musician):
     def play_solo(self):
         return "rattle boom crash"
 
-
+""" sub class of musician that can play Bassist """
 class Bassist(Musician):
     def __str__(self):
 
@@ -72,7 +75,7 @@ class Bassist(Musician):
     def play_solo(self):
         return "bom bom buh bom"
 
-
+""" create class  band from provided musicians"""
 class Band(Musician):
     def __init__(self, name, members):
 

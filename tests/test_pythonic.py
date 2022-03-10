@@ -1,8 +1,13 @@
 
 import pytest
 
-from pythonic_garage_band.Band import Band, Musician, Guitarist, Bassist, Drummer
-
+from pythonic_garage_band.Band import (
+    Band,
+    Musician,
+    Guitarist,
+    Bassist,
+    Drummer
+)
 
 def test_guitarist_str():
     joan = Guitarist("Joan Jett")
